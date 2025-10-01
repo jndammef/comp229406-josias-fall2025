@@ -1,0 +1,10 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "assignment1/Dockerfile"
+
+[deploy]
+startCommand = "npm start"
+healthcheckPath = "/"
+healthcheckTimeout = 300
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 10

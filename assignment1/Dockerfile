@@ -2,11 +2,12 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY assignment1/package*.json ./
 
 RUN npm ci && npm cache clean --force
 
-COPY . .
+# Copy application code from assignment1 directory rather than using the root context
+COPY assignment1/ .
 
 RUN npm run build
 
