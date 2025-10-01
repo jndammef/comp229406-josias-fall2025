@@ -10,6 +10,8 @@ COPY . .
 
 RUN npm run build
 
+RUN npm ci --only=production && npm cache clean --force
+
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nodeapp
 
@@ -20,5 +22,5 @@ USER nodeapp
 # Expose port
 EXPOSE 3000
 
-# Start application with dynamic port
-CMD ["sh", "-c", "vite preview --host 0.0.0.0 --port ${PORT:-3000}"]
+# Start application with serve
+CMD ["sh", "-c", "serve -s dist -l ${PORT:-3000}"]
