@@ -108,6 +108,54 @@ function Services() {
           </div>
         </div>
 
+        {/* Business Website Development */}
+        <div className="service-card">
+          <div className="service-icon">
+            <span className="service-emoji">🌐</span>
+          </div>
+          <h3>Custom Business Website Development</h3>
+          <p className="service-description">
+            Create professional, responsive websites tailored to your business needs. From service 
+            industry to e-commerce, deliver complete web solutions with modern frontend design, 
+            interactive features, and robust backend systems to drive customer engagement and growth.
+          </p>
+          <ul className="service-features">
+            <li>Custom responsive website design</li>
+            <li>Interactive booking & contact systems</li>
+            <li>Database integration (MongoDB/SQL)</li>
+            <li>SEO optimization & performance tuning</li>
+          </ul>
+          <div className="service-tech">
+            <span className="tech-tag">HTML/CSS/JS</span>
+            <span className="tech-tag">MongoDB</span>
+            <span className="tech-tag">Full-Stack</span>
+          </div>
+        </div>
+
+        {/* Enterprise Secrets Management */}
+        <div className="service-card">
+          <div className="service-icon">
+            <span className="service-emoji">🔐</span>
+          </div>
+          <h3>Enterprise Secrets Management Solutions</h3>
+          <p className="service-description">
+            Secure your organization's sensitive data with comprehensive secrets management 
+            implementation. Audit and remediate existing vulnerabilities, deploy enterprise-grade 
+            vault solutions, and establish security policies to protect critical business information.
+          </p>
+          <ul className="service-features">
+            <li>Secrets audit & vulnerability remediation</li>
+            <li>HashiCorp Vault deployment & configuration</li>
+            <li>Automated secret detection systems</li>
+            <li>Compliance & security policy enforcement</li>
+          </ul>
+          <div className="service-tech">
+            <span className="tech-tag">HashiCorp Vault</span>
+            <span className="tech-tag">Security</span>
+            <span className="tech-tag">Compliance</span>
+          </div>
+        </div>
+
       </div>
 
       <div className="services-cta">
