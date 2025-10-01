@@ -17,12 +17,8 @@ RUN adduser --system --uid 1001 nodeapp
 RUN chown -R nodeapp:nodejs /app
 USER nodeapp
 
-# Expose port 3000 since we are using that in the start script
+# Expose port
 EXPOSE 3000
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD node -e "require('http').get('http://localhost:3000/', (res) => { process.exit(res.statusCode === 200 ? 0 : 1) })"
-
-# Start application (we could have used run dev too, but start is more appropriate for production)
-CMD ["npm", "start"]
+# Start application with dynamic port
+CMD ["sh", "-c", "vite preview --host 0.0.0.0 --port ${PORT:-3000}"]
