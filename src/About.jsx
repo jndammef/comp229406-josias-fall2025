@@ -1,6 +1,6 @@
 import React from 'react'
 import resume from './assets/Arctiq CV - Josias Ndam Mefire.pdf'
-import profilePhoto from './assets/josias_photo.jpg'
+import profilePhoto from './assets/josias_photo.JPG'
 
 function About() {
   return (
