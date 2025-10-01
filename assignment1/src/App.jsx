@@ -14,9 +14,6 @@ function App() {
         <nav className="navbar">
           <div className="navbar-brand">
             {<img src={logo} alt="JN-Tech Logo" className="logo" /> }
-            {/* <div className="logo-text">
-              <span>Josias Ndam</span>
-            </div> */}
           </div>
           <ul className="nav-items">
             <li>

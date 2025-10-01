@@ -84,30 +84,6 @@ function Services() {
           </div>
         </div>
 
-        {/* GitHub Integration & Automation */}
-        <div className="service-card">
-          <div className="service-icon">
-            <span className="service-emoji">🤖</span>
-          </div>
-          <h3>GitHub Integration & Automation</h3>
-          <p className="service-description">
-            Develop custom GitHub bots and automation tools to streamline repository management, 
-            code review processes, and deployment workflows. Create standardized templates and 
-            automated compliance checking systems.
-          </p>
-          <ul className="service-features">
-            <li>Custom GitHub bot development</li>
-            <li>Pull request automation</li>
-            <li>Repository template creation</li>
-            <li>Automated compliance checking</li>
-          </ul>
-          <div className="service-tech">
-            <span className="tech-tag">Node.js</span>
-            <span className="tech-tag">GitHub API</span>
-            <span className="tech-tag">Automation</span>
-          </div>
-        </div>
-
         {/* Web Application Development */}
         <div className="service-card">
           <div className="service-icon">
