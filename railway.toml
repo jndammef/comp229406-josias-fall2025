@@ -1,6 +1,7 @@
 [build]
 builder = "dockerfile"
 dockerfilePath = "assignment1/Dockerfile"
+buildContext = "assignment1"
 
 [deploy]
 startCommand = "npm start"
