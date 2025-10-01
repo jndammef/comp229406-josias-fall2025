@@ -20,5 +20,5 @@ USER nodeapp
 # Expose port
 EXPOSE 3000
 
-# Start application with vite preview
-CMD ["sh", "-c", "vite preview --host 0.0.0.0 --port ${PORT:-3000}"]
+# Start application
+CMD ["npm", "start"]
